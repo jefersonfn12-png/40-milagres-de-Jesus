@@ -85,34 +85,3 @@
 @media (max-width:380px){
   .audienceGrid article{flex-basis:88%;min-height:176px}
 }
-
-/* Atalho móvel para a oferta */
-.mobileOfferBar{display:none}
-@media (max-width:767px){
-  body{padding-bottom:76px}
-  .mobileOfferBar{
-    position:fixed;
-    z-index:9999;
-    left:12px;
-    right:12px;
-    bottom:calc(10px + env(safe-area-inset-bottom));
-    min-height:58px;
-    padding:10px 16px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    border:1px solid rgba(255,255,255,.32);
-    border-radius:16px;
-    color:#fff;
-    background:linear-gradient(135deg,#159447,#0b7437);
-    box-shadow:0 10px 30px rgba(5,48,25,.32);
-    text-decoration:none;
-    font-family:var(--font-geist-sans),sans-serif;
-    letter-spacing:.02em;
-  }
-  .mobileOfferBar span{font-size:13px;font-weight:800}
-  .mobileOfferBar strong{font-size:18px;font-weight:900}
-  .mobileOfferBar b{font-size:18px;line-height:1}
-  .mobileOfferBar:active{transform:translateY(1px)}
-}
