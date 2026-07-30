@@ -68,3 +68,20 @@
   .trustStrip>div{flex-basis:90%}
   .priceCard strong{font-size:3.45rem}
 }
+
+/* audience-carousel-mobile-v6 */
+.audienceDots{display:none}
+@media (max-width:700px){
+  .audienceCarousel{width:calc(100% + 32px);margin:38px -16px 0;overflow:hidden}
+  .audienceGrid{scroll-snap-type:x mandatory;scroll-padding-inline:20px;-webkit-overflow-scrolling:touch;display:flex;width:100%;margin:0;padding:4px 20px 14px;gap:12px;overflow-x:auto;scrollbar-width:none}
+  .audienceGrid::-webkit-scrollbar{display:none}
+  .audienceGrid article{scroll-snap-align:center;scroll-snap-stop:always;flex:0 0 82%;min-width:0;min-height:190px;border:1px solid #dfcda9!important;border-radius:14px;justify-content:center;align-items:center;padding:28px 18px;display:flex;flex-direction:column;box-shadow:0 10px 26px #19334d12}
+  .audienceGrid span{font-size:1.5rem}
+  .audienceGrid h3{margin:16px 0 0;font-size:2rem;line-height:1.1}
+  .audienceDots{display:flex;justify-content:center;align-items:center;gap:9px;margin-top:2px}
+  .audienceDots a{width:10px;height:10px;border:1px solid #b98d36;border-radius:50%;background:#eadfc8;display:block}
+  .audienceDots a:first-child,.audienceDots a:hover,.audienceDots a:focus-visible{background:var(--gold);outline:none}
+}
+@media (max-width:380px){
+  .audienceGrid article{flex-basis:88%;min-height:176px}
+}
